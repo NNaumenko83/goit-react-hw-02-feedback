@@ -21,9 +21,8 @@ class App extends Component {
     return Math.round((positiveFeedbacks / totalFeedbacks) * 100);
   };
 
-  handleButtonClick = e => {
-    const value = e.currentTarget.id;
-    this.setState(prevState => ({ [value]: prevState[value] + 1 }));
+  handleButtonClick = option => {
+    this.setState(prevState => ({ [option]: prevState[option] + 1 }));
   };
 
   render() {
