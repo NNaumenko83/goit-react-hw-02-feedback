@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <Section title="Please leave feedback">
         <FeedbackOptions
-          options={['good', 'neutral', 'bad']}
+          options={Object.keys(this.state)}
           onLeaveFeedback={this.handleButtonClick}
         />
         <Statistic
